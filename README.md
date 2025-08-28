@@ -1,6 +1,6 @@
 ![Website Preview](./preview.png)
 
-Welcome to the official repository for the website of the [Your Institution's Name] Regional Health Laboratory. This project aims to provide a modern, fast, and accessible information platform for the general public, patients, and partners.
+Welcome to the official repository for the website of the BLUD UPTD Klinik Kesehatan Daerah dan Laboratorium Kesehatan Daerah Kabupaten Sukabumi Regional Health Laboratory. This project aims to provide a modern, fast, and accessible information platform for the general public, patients, and partners.
 
 This website is built with a static site approach, ensuring extremely fast performance, high security, and minimal hosting costs.
 
