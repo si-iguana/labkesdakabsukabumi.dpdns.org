@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arsip Berita - Laboratorium Kesehatan Daerah</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-green': '#10B981',
+                        'brand-blue': '#0369A1',
+                        'brand-yellow': '#F59E0B',
+                        'gray-light': '#F3F4F6',
+                        'gray-dark': '#374151',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-light text-gray-dark">
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-extrabold text-brand-blue">Arsip Berita & Informasi</h1>
+            <p class="mt-2 text-gray-600">Kumpulan berita, pengumuman, dan informasi publik dari instansi kami.</p>
+        </div>
+
+        <!-- Grid untuk semua berita -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Kartu Berita 1 -->
+            <a href="berita1.html" class="block bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=800" alt="Berita 1" class="h-48 w-full object-cover">
+                <div class="p-6">
+                    <p class="text-sm text-gray-500">28 Agustus 2025</p>
+                    <h3 class="mt-2 font-bold text-brand-blue">Peningkatan Kapasitas Alat Laboratorium Baru</h3>
+                    <p class="mt-4 text-sm font-semibold text-brand-green">Baca Selengkapnya &rarr;</p>
+                </div>
+            </a>
+
+            <!-- Kartu Berita 2 -->
+            <a href="berita2.html" class="block bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                <img src="https://images.unsplash.com/photo-1624969862293-d279dd587456?q=80&w=800" alt="Berita 2" class="h-48 w-full object-cover">
+                <div class="p-6">
+                    <p class="text-sm text-gray-500">25 Agustus 2025</p>
+                    <h3 class="mt-2 font-bold text-brand-blue">Jadwal Pelayanan Selama Libur Nasional</h3>
+                    <p class="mt-4 text-sm font-semibold text-brand-green">Baca Selengkapnya &rarr;</p>
+                </div>
+            </a>
+
+            <!-- Kartu Berita 3 -->
+            <a href="berita3.html" class="block bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                <img src="https://images.unsplash.com/photo-1581091224003-01e7c1e4f6c4?q=80&w=800" alt="Berita 3" class="h-48 w-full object-cover">
+                <div class="p-6">
+                    <p class="text-sm text-gray-500">22 Agustus 2025</p>
+                    <h3 class="mt-2 font-bold text-brand-blue">Laporan Informasi Publik Semester I Tahun 2025</h3>
+                    <p class="mt-4 text-sm font-semibold text-brand-green">Baca Selengkapnya &rarr;</p>
+                </div>
+            </a>
+
+            <!-- Kartu Berita 4 (Gratifikasi) -->
+            <a href="berita-gratifikasi.html" class="block bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                <img src="Gratifikasi.png" alt="Anti Gratifikasi" class="h-48 w-full object-cover">
+                <div class="p-6">
+                    <p class="text-sm text-gray-500">28 Agustus 2025</p>
+                    <h3 class="mt-2 font-bold text-brand-blue">Labkesda Menolak Gratifikasi</h3>
+                    <p class="mt-4 text-sm font-semibold text-brand-green">Baca Selengkapnya &rarr;</p>
+                </div>
+            </a>
+            
+            <!-- Anda bisa menambahkan lebih banyak kartu berita di sini -->
+
+        </div>
+
+        <div class="mt-16 text-center">
+            <a href="index.html" class="text-brand-blue font-semibold hover:underline">&larr; Kembali ke Halaman Utama</a>
+        </div>
+    </main>
+
+</body>
+</html>
