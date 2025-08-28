@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- GANTI JUDUL BERITA DI SINI -->
     <title>Anti-Gratifikasi</title>
     <link rel="icon" type="image/png" href="logo.png">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -30,20 +29,17 @@
         /* Style untuk konten artikel agar lebih mudah dibaca */
         .article-content p { margin-bottom: 1.5rem; }
         .article-content h3 { font-size: 1.5rem; font-weight: 700; margin-top: 2rem; margin-bottom: 1rem; }
+        .article-content h2 { font-size: 1.875rem; font-weight: 700; margin-top: 2rem; margin-bottom: 1rem; }
     </style>
 </head>
 <body class="bg-white text-gray-dark">
 
     <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <!-- GANTI JUDUL BERITA DI SINI -->
         <h1 class="text-3xl md:text-4xl font-extrabold text-brand-blue">Anti-Gratifikasi</h1>
-        <!-- GANTI TANGGAL BERITA DI SINI -->
         <p class="mt-2 text-sm text-gray-500">Dipublikasikan pada 28 Agustus 2025</p>
 
-        <!-- GANTI URL GAMBAR DI SINI -->
         <img src="Gratifikasi.png" alt="Gambar Berita" class="w-full h-80 object-cover rounded-lg my-8">
 
-        <!-- GANTI ISI KONTEN BERITA DI SINI -->
         <div class="article-content text-gray-600 leading-relaxed">
             <h3>Anti-Gratifikasi: Membangun Integritas di Laboratorium Kesehatan Daerah</h3>
             <p>Laboratorium Kesehatan Daerah (Labkesda) memiliki peran vital dalam sistem kesehatan masyarakat. Mereka bertanggung jawab untuk memastikan akurasi dan keandalan hasil pemeriksaan, yang menjadi dasar penegakan diagnosis, penentuan kebijakan kesehatan, hingga penanganan wabah. Namun, di balik peran mulia ini, Labkesda juga rentan terhadap praktik korupsi, khususnya gratifikasi. Memahami dan menerapkan prinsip anti-gratifikasi bukanlah sekadar kepatuhan hukum, melainkan fondasi utama untuk menjaga integritas dan kepercayaan publik.</p>
@@ -51,7 +47,8 @@
             <h3>Apa itu Gratifikasi dan Mengapa Berbahaya?</h3>
             <p>Secara sederhana, <strong>gratifikasi</strong> adalah pemberian dalam arti luas, seperti uang, barang, diskon, komisi, pinjaman tanpa bunga, tiket perjalanan, fasilitas penginapan, perjalanan wisata, pengobatan gratis, dan bentuk-bentuk lain yang diterima oleh seorang pegawai negeri atau penyelenggara negara. Dalam konteks Labkesda, gratifikasi bisa datang dari berbagai pihak, termasuk vendor alat kesehatan, perusahaan farmasi, atau bahkan individu yang ingin mendapatkan hasil pemeriksaan lebih cepat atau 'diperbaiki'.</p>
             <p>Praktik ini sangat berbahaya karena:</p>
-            <ul>
+            <!-- DIUBAH: Menambahkan class Tailwind untuk daftar -->
+            <ul class="list-disc pl-5 space-y-2 mb-6">
                 <li><strong>Merusak Objektivitas:</strong> Pegawai yang menerima gratifikasi bisa terpengaruh dalam mengambil keputusan. Misalnya, memilih reagen atau alat dari vendor tertentu bukan karena kualitasnya, melainkan karena imbalan yang diberikan.</li>
                 <li><strong>Menurunkan Kualitas Layanan:</strong> Gratifikasi dapat mengarah pada praktik curang, seperti memanipulasi hasil tes demi kepentingan pihak pemberi. Ini secara langsung membahayakan pasien dan merusak data kesehatan masyarakat.</li>
                 <li><strong>Menciptakan Ketidakadilan:</strong> Pasien atau masyarakat umum yang tidak memberikan 'hadiah' akan mendapatkan pelayanan yang tidak optimal, sementara pihak pemberi gratifikasi mendapatkan perlakuan khusus.</li>
@@ -62,24 +59,31 @@
         <hr>
 
         <div class="article-content text-gray-600 leading-relaxed">
-           <h2>Menerapkan Budaya Anti-Gratifikasi di Labkesda</h2>
+            <h2>Menerapkan Budaya Anti-Gratifikasi di Labkesda</h2>
             <p>Membangun benteng anti-gratifikasi di Labkesda tidak bisa hanya mengandalkan aturan, melainkan harus menjadi <strong>budaya kerja</strong>. Berikut adalah langkah-langkah konkret yang dapat diimplementasikan:</p>
-            <ol>
-                <li><strong>Edukasi dan Sosialisasi Berkelanjutan:</strong> Pimpinan Labkesda harus secara rutin mengadakan pelatihan dan sosialisasi mengenai bahaya gratifikasi, termasuk contoh-contoh kasus nyata dan sanksi hukumnya. Pastikan setiap pegawai, mulai dari analis laboratorium hingga petugas administrasi, memahami konsep ini.</li>
-                <li><strong>Sistem Pengendalian Internal yang Kuat:</strong>
-                    <ul>
+            <!-- DIUBAH: Menambahkan class Tailwind untuk daftar bernomor -->
+            <ol class="list-decimal pl-5 space-y-4 mb-6">
+                <li>
+                    <strong>Edukasi dan Sosialisasi Berkelanjutan:</strong> Pimpinan Labkesda harus secara rutin mengadakan pelatihan dan sosialisasi mengenai bahaya gratifikasi, termasuk contoh-contoh kasus nyata dan sanksi hukumnya. Pastikan setiap pegawai, mulai dari analis laboratorium hingga petugas administrasi, memahami konsep ini.
+                </li>
+                <li>
+                    <strong>Sistem Pengendalian Internal yang Kuat:</strong>
+                    <ul class="list-disc pl-5 space-y-2 mt-2">
                         <li><strong>Prosedur Pelayanan Standar (SOP):</strong> Buat dan terapkan SOP yang jelas dan transparan untuk setiap proses, mulai dari penerimaan sampel hingga penyerahan hasil. SOP ini harus meminimalkan interaksi personal yang dapat membuka celah untuk gratifikasi.</li>
                         <li><strong>Mekanisme Pelaporan:</strong> Sediakan saluran pelaporan yang aman dan rahasia bagi pegawai yang mengetahui atau menerima tawaran gratifikasi. Lindungi pelapor (whistleblower) dari potensi intimidasi.</li>
                     </ul>
                 </li>
-                <li><strong>Penguatan Integritas dan Kode Etik:</strong>
-                    <ul>
+                <li>
+                    <strong>Penguatan Integritas dan Kode Etik:</strong>
+                    <ul class="list-disc pl-5 space-y-2 mt-2">
                         <li><strong>Pakta Integritas:</strong> Setiap pegawai baru atau secara berkala, dapat menandatangani pakta integritas yang menyatakan komitmen untuk menolak gratifikasi.</li>
                         <li><strong>Teladan dari Pimpinan:</strong> Pimpinan Labkesda harus menjadi contoh utama dalam menolak gratifikasi dan menerapkan prinsip-prinsip kejujuran. Sikap tegas dari atasan akan memotivasi bawahan.</li>
                     </ul>
                 </li>
-                <li><strong>Apresiasi Non-Finansial:</strong> Ciptakan budaya kerja yang mengapresiasi kinerja berbasis meritokrasi, bukan kedekatan atau pemberian. Pemberian penghargaan atas integritas dan dedikasi bisa menjadi insentif yang jauh lebih positif dan berkelanjutan.</li>
-            </ol> 
+                <li>
+                    <strong>Apresiasi Non-Finansial:</strong> Ciptakan budaya kerja yang mengapresiasi kinerja berbasis meritokrasi, bukan kedekatan atau pemberian. Pemberian penghargaan atas integritas dan dedikasi bisa menjadi insentif yang jauh lebih positif dan berkelanjutan.
+                </li>
+            </ol>  
         </div>
 
         <hr>
@@ -87,7 +91,6 @@
         <div class="article-content text-gray-600 leading-relaxed">
             <h2>Pentingnya Melapor dan Konsekuensinya</h2>
             <p>Pegawai Labkesda memiliki kewajiban untuk menolak setiap bentuk gratifikasi yang berhubungan dengan pekerjaan mereka. Jika terlanjur menerima, penting untuk segera melapor ke <strong>Unit Pengendalian Gratifikasi (UPG)</strong> yang ada di instansi atau langsung ke <strong>Komisi Pemberantasan Korupsi (KPK)</strong>. Laporan yang dilakukan dalam jangka waktu yang ditentukan (biasanya 30 hari kerja) akan membebaskan penerima dari tuntutan pidana.</p>
-
             <p>Menolak gratifikasi memang tidak selalu mudah, tetapi ini adalah langkah krusial untuk menjaga marwah profesi dan memastikan Labkesda dapat menjalankan tugasnya dengan profesional, objektif, dan berintegritas tinggi. Dengan menolak gratifikasi, kita tidak hanya menghindari jerat hukum, tetapi juga turut serta dalam membangun sistem kesehatan yang bersih dan dipercaya masyarakat.</p>
         </div>
         
