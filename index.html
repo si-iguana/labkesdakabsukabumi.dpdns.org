@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorium Kesehatan Daerah</title>
+    
+    <!-- Memuat Tailwind CSS dari CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Memuat Ikon (Lucide Icons) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Konfigurasi Warna Tema -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-green': '#10B981', // Hijau Emerald
+                        'brand-blue': '#0369A1',  // Biru Langit
+                        'brand-yellow': '#F59E0B', // Kuning Amber
+                        'gray-light': '#F3F4F6',
+                        'gray-dark': '#374151',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Menambahkan Google Fonts untuk tampilan profesional -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-white text-gray-dark">
+
+    <!-- ===== HEADER & NAVIGASI ===== -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-lg border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-3">
+                    <img src="https://placehold.co/40x40/10b981/ffffff?text=L" alt="Logo Instansi" class="h-10 w-10 rounded-full">
+                    <div>
+                        <p class="font-bold text-brand-blue text-sm md:text-base leading-tight">Laboratorium Kesehatan Daerah</p>
+                        <p class="text-xs text-gray-500 leading-tight">Nama Instansi Anda</p>
+                    </div>
+                </div>
+                <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                    <a href="#sambutan" class="text-gray-600 hover:text-brand-green transition">Sambutan</a>
+                    <a href="#layanan" class="text-gray-600 hover:text-brand-green transition">Layanan</a>
+                    <a href="#berita" class="text-gray-600 hover:text-brand-green transition">Berita</a>
+                    <a href="#kontak" class="text-gray-600 hover:text-brand-green transition">Kontak</a>
+                </nav>
+                <a href="#kontak" class="hidden md:inline-block bg-brand-green text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-opacity-90 transition">Hubungi Kami</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===== KATA SAMBUTAN (HERO) ===== -->
+        <section id="sambutan" class="bg-gray-light">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 text-center">
+                <h1 class="text-3xl md:text-5xl font-extrabold text-brand-blue tracking-tight">Selamat Datang di Website Resmi Kami</h1>
+                <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-600">Memberikan pelayanan laboratorium kesehatan yang profesional, akurat, dan terpercaya untuk meningkatkan kualitas kesehatan masyarakat.</p>
+                <div class="mt-8 flex justify-center space-x-4">
+                    <a href="#layanan" class="bg-brand-green text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">Lihat Jenis Pemeriksaan</a>
+                    <a href="#kontak" class="bg-white border border-gray-300 text-gray-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-50 transition">Informasi Kontak</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== JENIS PEMERIKSAAN (LAYANAN) ===== -->
+        <section id="layanan" class="py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-extrabold text-gray-dark">Jenis-Jenis Pemeriksaan</h2>
+                    <p class="mt-2 text-gray-600">Kami melayani berbagai jenis pemeriksaan laboratorium untuk individu maupun instansi.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Contoh Kartu Layanan 1 -->
+                    <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-lg transition-shadow">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-brand-green/10 mb-4">
+                            <i data-lucide="droplets" class="h-6 w-6 text-brand-green"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-brand-blue">Hematologi</h3>
+                        <p class="mt-2 text-sm text-gray-600">Pemeriksaan darah lengkap untuk mendeteksi berbagai kelainan, seperti anemia, infeksi, dan leukemia.</p>
+                    </div>
+                    <!-- Contoh Kartu Layanan 2 -->
+                    <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-lg transition-shadow">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-brand-blue/10 mb-4">
+                            <i data-lucide="test-tube-2" class="h-6 w-6 text-brand-blue"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-brand-blue">Kimia Klinik</h3>
+                        <p class="mt-2 text-sm text-gray-600">Analisis kadar zat kimia dalam darah seperti gula darah, kolesterol, fungsi hati, dan fungsi ginjal.</p>
+                    </div>
+                    <!-- Contoh Kartu Layanan 3 -->
+                    <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-lg transition-shadow">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-brand-yellow/10 mb-4">
+                            <i data-lucide="flask-conical" class="h-6 w-6 text-brand-yellow"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-brand-blue">Mikrobiologi</h3>
+                        <p class="mt-2 text-sm text-gray-600">Identifikasi mikroorganisme penyebab infeksi seperti bakteri dan jamur, serta uji sensitivitas antibiotik.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== BERITA / PPID ===== -->
+        <section id="berita" class="py-20 bg-gray-light">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-extrabold text-gray-dark">Berita & Informasi Publik (PPID)</h2>
+                    <p class="mt-2 text-gray-600">Informasi terkini seputar kegiatan, layanan, dan pengumuman dari instansi kami.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Contoh Kartu Berita 1 -->
+                    <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=800" alt="Berita 1" class="h-48 w-full object-cover">
+                        <div class="p-6">
+                            <p class="text-sm text-gray-500">28 Agustus 2025</p>
+                            <h3 class="mt-2 font-bold text-brand-blue">Peningkatan Kapasitas Alat Laboratorium Baru</h3>
+                            <a href="#" class="mt-4 inline-block text-sm font-semibold text-brand-green hover:underline">Baca Selengkapnya &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Contoh Kartu Berita 2 -->
+                    <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                        <img src="https://images.unsplash.com/photo-1624969862293-d279dd587456?q=80&w=800" alt="Berita 2" class="h-48 w-full object-cover">
+                        <div class="p-6">
+                            <p class="text-sm text-gray-500">25 Agustus 2025</p>
+                            <h3 class="mt-2 font-bold text-brand-blue">Jadwal Pelayanan Selama Libur Nasional</h3>
+                            <a href="#" class="mt-4 inline-block text-sm font-semibold text-brand-green hover:underline">Baca Selengkapnya &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Contoh Kartu Berita 3 -->
+                    <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                        <img src="https://images.unsplash.com/photo-1581091224003-01e7c1e4f6c4?q=80&w=800" alt="Berita 3" class="h-48 w-full object-cover">
+                        <div class="p-6">
+                            <p class="text-sm text-gray-500">22 Agustus 2025</p>
+                            <h3 class="mt-2 font-bold text-brand-blue">Laporan Informasi Publik Semester I Tahun 2025</h3>
+                            <a href="#" class="mt-4 inline-block text-sm font-semibold text-brand-green hover:underline">Baca Selengkapnya &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== HUBUNGI KAMI (KONTAK) ===== -->
+        <section id="kontak" class="py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-extrabold text-gray-dark">Hubungi Kami</h2>
+                    <p class="mt-2 text-gray-600">Kami siap membantu Anda. Silakan hubungi kami melalui informasi di bawah ini.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 items-start">
+                    <div class="bg-white border border-gray-200 rounded-lg p-8">
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <i data-lucide="map-pin" class="h-6 w-6 text-brand-blue mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold">Alamat Kantor</h4>
+                                    <p class="text-gray-600">Jl. Kesehatan No. 123, Kota Anda, Provinsi Anda, Kode Pos 12345</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <i data-lucide="phone" class="h-6 w-6 text-brand-blue mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold">Telepon</h4>
+                                    <p class="text-gray-600">(021) 123-4567</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <i data-lucide="mail" class="h-6 w-6 text-brand-blue mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold">Email</h4>
+                                    <p class="text-gray-600">info@labkesda.go.id</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <i data-lucide="clock" class="h-6 w-6 text-brand-blue mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold">Jam Operasional</h4>
+                                    <p class="text-gray-600">Senin - Jumat: 08:00 - 16:00 WIB</p>
+                                    <p class="text-gray-600">Sabtu: 08:00 - 13:00 WIB</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-200 rounded-lg overflow-hidden h-96 md:h-full">
+                        <!-- Placeholder untuk Peta. Ganti dengan iframe Google Maps Anda -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322732!2d106.8195613147689!3d-6.194741395514931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f428ee1c2b73%3A0x237116a8533e4593!2sMonumen%20Nasional!5e0!3m2!1sid!2sid!4v1629888888888!5m2!1sid!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="bg-brand-blue text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h5 class="font-bold text-lg">Laboratorium Kesehatan Daerah</h5>
+                    <p class="mt-2 text-sm text-blue-200">Melayani dengan profesionalisme untuk kesehatan masyarakat yang lebih baik.</p>
+                </div>
+                <div>
+                    <h5 class="font-semibold">Tautan Cepat</h5>
+                    <ul class="mt-2 space-y-1 text-sm">
+                        <li><a href="#sambutan" class="text-blue-200 hover:text-white">Sambutan</a></li>
+                        <li><a href="#layanan" class="text-blue-200 hover:text-white">Layanan</a></li>
+                        <li><a href="#berita" class="text-blue-200 hover:text-white">Berita</a></li>
+                        <li><a href="#kontak" class="text-blue-200 hover:text-white">Kontak</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-semibold">Ikuti Kami</h5>
+                    <div class="flex space-x-4 mt-2">
+                        <a href="#" class="text-blue-200 hover:text-white"><i data-lucide="facebook"></i></a>
+                        <a href="#" class="text-blue-200 hover:text-white"><i data-lucide="instagram"></i></a>
+                        <a href="#" class="text-blue-200 hover:text-white"><i data-lucide="youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-blue-800 pt-6 text-center text-sm text-blue-300">
+                <p>&copy; 2025 Nama Instansi Anda. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Script untuk mengaktifkan ikon -->
+    <script>
+      lucide.createIcons();
+    </script>
+
+</body>
+</html>
