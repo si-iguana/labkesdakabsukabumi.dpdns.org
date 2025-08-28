@@ -1,65 +1,63 @@
-# Website Resmi Laboratorium Kesehatan Daerah
+![Website Preview](./preview.png)
 
-![Pratinjau Website](https://placehold.co/800x400/10b981/ffffff?text=Pratinjau+Website+Anda)
+Welcome to the official repository for the website of the [Your Institution's Name] Regional Health Laboratory. This project aims to provide a modern, fast, and accessible information platform for the general public, patients, and partners.
 
-Selamat datang di repositori resmi untuk website Laboratorium Kesehatan Daerah [Nama Instansi Anda]. Proyek ini bertujuan untuk menyediakan platform informasi yang modern, cepat, dan mudah diakses bagi masyarakat umum, pasien, dan mitra kerja.
-
-Website ini dibangun dengan pendekatan *static site*, memastikan performa yang sangat cepat, keamanan yang tinggi, dan biaya hosting yang minimal.
+This website is built with a static site approach, ensuring extremely fast performance, high security, and minimal hosting costs.
 
 ---
 
-## ✨ Fitur Utama
+## ✨ Key Features
 
-* **Desain Responsif**: Tampilan yang optimal di semua perangkat, mulai dari desktop hingga mobile.
-* **Waktu Muat Cepat**: Dibangun sebagai file HTML statis untuk kecepatan akses maksimal.
-* **Informasi Lengkap**: Menyajikan informasi penting seperti kata sambutan, jenis layanan, berita terbaru (PPID), dan detail kontak.
-* **Navigasi Intuitif**: Pengguna dapat dengan mudah menemukan informasi yang mereka butuhkan.
-* **Nuansa Desain Profesional**: Menggunakan palet warna hijau, biru, dan kuning yang mencerminkan citra instansi kesehatan yang modern dan terpercaya.
-
----
-
-## 🚀 Teknologi yang Digunakan
-
-Proyek ini sengaja dibuat sederhana dan andal dengan teknologi berikut:
-
-* **[HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)**: Sebagai struktur dasar website.
-* **[Tailwind CSS](https://tailwindcss.com/)**: Untuk styling modern dan responsif, dimuat melalui CDN untuk kemudahan.
-* **[Lucide Icons](https://lucide.dev/)**: Untuk ikonografi yang bersih dan konsisten, dimuat melalui CDN.
-* **[Google Fonts](https://fonts.google.com/)**: Menggunakan font "Inter" untuk tipografi yang profesional dan mudah dibaca.
-* **[GitHub Pages](https://pages.github.com/)**: Sebagai platform hosting gratis untuk file statis.
-* **[Cloudflare](https://www.cloudflare.com/)**: Untuk manajemen DNS dan peningkatan keamanan serta performa.
+* **Responsive Design**: Optimal viewing experience across all devices, from desktops to mobile phones.
+* **Fast Load Times**: Built as a static HTML file for maximum access speed.
+* **Comprehensive Information**: Presents essential information such as a welcome message, types of services, latest news (PPID), and contact details.
+* **Intuitive Navigation**: Users can easily find the information they need.
+* **Professional Design Aesthetic**: Uses a green, blue, and yellow color palette that reflects the image of a modern and trustworthy health institution.
 
 ---
 
-## 🛠️ Cara Menjalankan Secara Lokal
+## 🚀 Tech Stack
 
-Karena ini adalah website statis, Anda tidak memerlukan proses instalasi yang rumit:
+This project is intentionally kept simple and reliable with the following technologies:
 
-1.  **Clone Repositori (Opsional)**
+* **[HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)**: As the basic structure of the website.
+* **[Tailwind CSS](https://tailwindcss.com/)**: For modern and responsive styling, loaded via CDN for simplicity.
+* **[Lucide Icons](https://lucide.dev/)**: For clean and consistent iconography, loaded via CDN.
+* **[Google Fonts](https://fonts.google.com/)**: Uses the "Inter" font for professional and readable typography.
+* **[GitHub Pages](https://pages.github.com/)**: As a free hosting platform for static files.
+* **[Cloudflare](https://www.cloudflare.com/)**: For DNS management and improved security and performance.
+
+---
+
+## 🛠️ Running Locally
+
+Since this is a static website, you do not need a complex installation process:
+
+1.  **Clone the Repository (Optional)**
     ```bash
-    git clone [https://github.com/NAMA-USER-ANDA/NAMA-REPO-ANDA.git](https://github.com/NAMA-USER-ANDA/NAMA-REPO-ANDA.git)
+    git clone [https://github.com/YOUR-USERNAME/YOUR-REPOSITORY-NAME.git](https://github.com/YOUR-USERNAME/YOUR-REPOSITORY-NAME.git)
     ```
-2.  **Buka File**
-    Cukup buka file `index.html` langsung di browser favorit Anda (Google Chrome, Firefox, dll.).
+2.  **Open the File**
+    Simply open the `index.html` file directly in your favorite browser (Google Chrome, Firefox, etc.).
 
 ---
 
-## 🌐 Panduan Deployment
+## 🌐 Deployment Guide
 
-Website ini di-hosting di **GitHub Pages** dan diarahkan melalui **Cloudflare DNS**.
+This website is hosted on **GitHub Pages** and pointed to via **Cloudflare DNS**.
 
 1.  **GitHub Pages**:
-    * Setiap perubahan yang di-*push* ke branch `main` akan secara otomatis ter-update di website.
-    * Domain custom diatur di `Settings` > `Pages` pada repository ini.
+    * Any changes pushed to the `main` branch will automatically update the live website.
+    * The custom domain is configured in `Settings` > `Pages` within this repository.
 
 2.  **Cloudflare DNS**:
-    * Konfigurasi DNS mengarahkan domain custom ke server GitHub Pages menggunakan `A` records dan `CNAME` record.
-    * Ini memastikan website dapat diakses melalui nama domain resmi Anda.
+    * The DNS configuration points the custom domain to GitHub Pages' servers using `A` records and a `CNAME` record.
+    * This ensures the website is accessible via your official domain name.
 
 ---
 
-## 📞 Kontak & Informasi
+## 📞 Contact & Information
 
-Untuk pertanyaan lebih lanjut mengenai laboratorium atau layanan kami, silakan kunjungi bagian **Hubungi Kami** di website.
+For further questions regarding our laboratory or services, please visit the **Contact Us** section on the website.
 
-Terima kasih telah mengunjungi repositori kami.
+Thank you for visiting our repository.
